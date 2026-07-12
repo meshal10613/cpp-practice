@@ -14,6 +14,8 @@ All programs are located under the `programs/` directory:
 cpp-practice/
 ├── README.md
 └── programs/
+    ├── 2d_array/
+    │   └── main.cpp
     ├── area_of_rectangle/
     │   └── main.cpp
     ├── average_of_three/
@@ -46,6 +48,7 @@ Below is a list of all the practice programs available in this repository:
 
 | Program Name | Description | Source Code |
 | :--- | :--- | :--- |
+| **2D Array** | Declares a 2D array of user-defined size, takes input for its elements, and displays the array. | [main.cpp](file:///e:/C++/cpp-practice/programs/2d_array/main.cpp) |
 | **Area of Rectangle** | Computes the area of a rectangle given its length and width. | [main.cpp](file:///e:/C++/cpp-practice/programs/area_of_rectangle/main.cpp) |
 | **Average of Three** | Calculates the average of three input numbers. | [main.cpp](file:///e:/C++/cpp-practice/programs/average_of_three/main.cpp) |
 | **Biggest of Three** | Compares three numbers and outputs the largest one. | [main.cpp](file:///e:/C++/cpp-practice/programs/biggest_of_three/main.cpp) |
