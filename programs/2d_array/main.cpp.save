@@ -2,7 +2,7 @@
 using namespace std;
 
 int main() {
-    int row, column, i, j;
+    int row, column;
 
     cout << "Enter the number of rows: ";
     cin >> row;
@@ -21,8 +21,8 @@ int main() {
     }
 
     cout << "\nThe 2D array is:\n";
-    for (i = 0; i < row; i++) {
-        for (j = 0; j < column; j++) {
+    for (int i = 0; i < row; i++) {
+        for (int j = 0; j < column; j++) {
             cout << arr[i][j] << " ";
         }
         cout << endl;
