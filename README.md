@@ -1,6 +1,6 @@
 # C++ Practice Programs
 
-A curated collection of basic C++ programs, designed for learning and practicing foundational programming concepts such as conditionals, loops, basic math, and simple algorithms.
+A curated collection of basic C++ programs, designed for learning and practicing foundational programming concepts such as conditionals, loops, basic math, array searching algorithms, and interactive applications.
 
 Each program is organized into its own dedicated subdirectory containing a `main.cpp` source file.
 
@@ -26,9 +26,15 @@ cpp-practice/
     │   └── main.cpp
     ├── leap_year/
     │   └── main.cpp
+    ├── linear_search/
+    │   └── main.cpp
+    ├── linear_search_algorithm_for_a_2d_array/
+    │   └── main.cpp
     ├── main/
     │   └── main.cpp
     ├── positive_negative_zero/
+    │   └── main.cpp
+    ├── quiz_test_system/
     │   └── main.cpp
     ├── simple_calculator/
     │   └── main.cpp
@@ -54,8 +60,11 @@ Below is a list of all the practice programs available in this repository:
 | **Biggest of Three** | Compares three numbers and outputs the largest one. | [main.cpp](file:///e:/C++/cpp-practice/programs/biggest_of_three/main.cpp) |
 | **Even or Odd** | Checks if an integer entered by the user is even or odd. | [main.cpp](file:///e:/C++/cpp-practice/programs/even_odd/main.cpp) |
 | **Leap Year Checker** | Determines whether a given year is a leap year. | [main.cpp](file:///e:/C++/cpp-practice/programs/leap_year/main.cpp) |
+| **Linear Search** | Searches for a target element in a 1D array using the linear search algorithm. | [main.cpp](file:///e:/C++/cpp-practice/programs/linear_search/main.cpp) |
+| **Linear Search (2D Array)** | Searches for a target element in a 2D matrix and displays its row and column indices. | [main.cpp](file:///e:/C++/cpp-practice/programs/linear_search_algorithm_for_a_2d_array/main.cpp) |
 | **Hello World (Main)** | A simple template program that outputs "Hello, World!". | [main.cpp](file:///e:/C++/cpp-practice/programs/main/main.cpp) |
 | **Positive Negative Zero** | Identifies if a number is positive, negative, or zero. | [main.cpp](file:///e:/C++/cpp-practice/programs/positive_negative_zero/main.cpp) |
+| **Quiz Test System** | Interactive console-based multiple-choice quiz system with score tracking, negative marking, and performance evaluation. | [main.cpp](file:///e:/C++/cpp-practice/programs/quiz_test_system/main.cpp) |
 | **Simple Calculator** | Implements basic arithmetic operations (`+`, `-`, `*`, `/`) using a switch case. | [main.cpp](file:///e:/C++/cpp-practice/programs/simple_calculator/main.cpp) |
 | **Square of a Number** | Computes and displays the square of an input integer. | [main.cpp](file:///e:/C++/cpp-practice/programs/square_of_number/main.cpp) |
 | **Swap Numbers** | Swaps the values of two variables without using a temporary helper variable. | [main.cpp](file:///e:/C++/cpp-practice/programs/swap_numbers/main.cpp) |
@@ -73,19 +82,19 @@ To compile and run these programs, you will need a C++ compiler (like `g++`) ins
 
 To run any of the programs, navigate to the program's folder, compile the `main.cpp` file, and run the compiled executable. 
 
-For example, to run the **Simple Calculator**:
+For example, to run the **Quiz Test System**:
 
 1. Compile the program from the workspace root:
    ```bash
-   g++ programs/simple_calculator/main.cpp -o simple_calculator
+   g++ programs/quiz_test_system/main.cpp -o quiz_test_system
    ```
 
 2. Run the executable:
    - **Windows:**
      ```powershell
-     ./simple_calculator
+     ./quiz_test_system
      ```
    - **Linux / macOS:**
      ```bash
-     ./simple_calculator
+     ./quiz_test_system
      ```
