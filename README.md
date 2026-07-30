@@ -52,6 +52,8 @@ cpp-practice/
     │   └── main.cpp
     ├── swap_numbers/
     │   └── main.cpp
+    ├── tic_tac_toe/
+    │   └── main.cpp
     └── vowel_consonant/
         └── main.cpp
 ```
@@ -83,6 +85,7 @@ Below is a list of all the practice programs available in this repository:
 | **Simple Calculator** | Implements basic arithmetic operations (`+`, `-`, `*`, `/`) using a switch case. | [main.cpp](programs/simple_calculator/main.cpp) |
 | **Square of a Number** | Computes and displays the square of an input integer. | [main.cpp](programs/square_of_number/main.cpp) |
 | **Swap Numbers** | Swaps the values of two variables without using a temporary helper variable. | [main.cpp](programs/swap_numbers/main.cpp) |
+| **Tic Tac Toe** | A 2-player console-based Tic Tac Toe game played on a 3x3 grid with win/draw detection and screen clearing. | [main.cpp](programs/tic_tac_toe/main.cpp) |
 | **Vowel or Consonant** | Checks if an input alphabet character is a vowel or a consonant. | [main.cpp](programs/vowel_consonant/main.cpp) |
 
 ---
