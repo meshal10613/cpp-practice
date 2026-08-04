@@ -1,0 +1,72 @@
+#include <iostream>
+#include <vector>
+#include <algorithm>
+using namespace std;
+
+vector<int> twoSum(vector<int>& arr, int target) {
+    vector<pair<int, int>> nums;
+
+    // Store value and original index
+    for(int i = 0; i < arr.size(); i++) {
+        nums.push_back({arr[i], i});
+    }
+
+    // Sort by value
+    sort(nums.begin(), nums.end());
+
+    int left = 0;
+    int right = nums.size() - 1;
+
+    while(left < right) {
+        int sum = nums[left].first + nums[right].first;
+
+        if(sum == target) {
+            return {nums[left].second, nums[right].second};
+        }
+        else if(sum < target) {
+            left++;
+        }
+        else {
+            right--;
+        }
+    }
+
+    return {};
+}
+
+vector<int> threeSum(vector<int>& arr, int target){
+    vector<int> result;
+    int size = arr.size();
+    
+    for(int i = 0; i < size; i++){
+        for(int j = i + 1; j < size; j++){
+            for(int k = j + 1; k < size; k++){
+                if(arr[i] + arr[j] + arr[k] == target){
+                    result.push_back(arr[i]);
+                }
+            }
+        }
+    }
+    
+    return result;
+}
+
+int main() {
+    vector<int> arr = {2, 7, 11, 15};
+    int target = 9;
+
+    vector<int> result = twoSum(arr, target);
+
+    cout << result[0] << " " << result[1];
+    
+    cout << endl << "------------------------------" << endl;
+    
+    vector<int> arr2 = {2, 7, 11, 15, 8, 5, 3};
+    int target2 = 10;
+
+    vector<int> result2 = threeSum(arr2, target2);
+
+    cout << result2[0] << " " << result2[1];
+
+    return 0;
+}

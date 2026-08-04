@@ -1,0 +1,35 @@
+#include<iostream>
+#include <vector>
+using namespace std;
+
+vector<int> threeSum(vector<int>& arr, int target){
+    vector<int> result;
+    int size = arr.size();
+
+    for(int i = 0; i < size; i++){
+        for(int j = i + 1; j < size; j++){
+            for(int k = j + 1; k < size; k++){
+                if(arr[i] + arr[j] + arr[k] == target){
+                    result.push_back(arr[i]);
+                    result.push_back(arr[j]);
+                    result.push_back(arr[k]);
+                }
+            }
+        }
+    }
+
+    return result;
+}
+
+int main(){
+    vector<int> arr = {2, 7, 11, 15, 8, 5, 3};
+    int target = 10;
+
+    vector<int> result = threeSum(arr, target);
+
+    for(let i = 0; i < result.si; i++){
+        cout << result[i];
+    }
+
+    return 0;
+}
